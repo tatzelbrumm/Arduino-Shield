@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6737,8 +6737,8 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="2.15K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="2.15K"/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X12" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X12" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="470"/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
@@ -7373,13 +7373,11 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <pinref part="S2" gate="2" pin="S"/>
 <wire x1="246.38" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="167.64" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="170.18" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="10"/>
 <wire x1="246.38" y1="167.64" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="104.14" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="104.14" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="160.02" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
+<junction x="246.38" y="160.02"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -7389,6 +7387,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <wire x1="251.46" y1="160.02" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="S"/>
 <wire x1="251.46" y1="170.18" x2="251.46" y2="160.02" width="0.1524" layer="91"/>
+<junction x="251.46" y="160.02"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -7416,12 +7415,6 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <approved hash="208,1,121.92,152.4,VEE,sup,,,,"/>
 <approved hash="208,1,111.76,147.32,VEE,out,,,,"/>
 <approved hash="208,1,231.14,177.8,VEE,sup,,,,"/>
-<approved hash="108,1,246.38,104.14,N$33,,,,,"/>
-<approved hash="108,1,241.3,170.18,N$33,,,,,"/>
-<approved hash="108,1,246.38,160.02,N$33,,,,,"/>
-<approved hash="108,1,251.46,160.02,N$31,,,,,"/>
-<approved hash="113,1,236.089,160.257,JP5,,,,,"/>
-<approved hash="113,1,66.2771,86.4912,JP6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
